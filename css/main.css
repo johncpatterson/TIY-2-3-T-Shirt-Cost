@@ -102,8 +102,7 @@ span {
   transform: rotateY(180deg);
   -moz-transform: rotateY(180deg); }
 
-.flip_container:hover
-.shirt {
+.flip_container:hover .shirt {
   transform: rotateY(180deg);
   -moz-transform: rotateY(180deg); }
 
@@ -221,8 +220,7 @@ span {
   margin: -5px auto;
   background-color: #DCB07D; }
 
-.small_pic_4:hover
-.small_pic_4_color_blue {
+.small_pic_4:hover .small_pic_4_color_blue {
   border: 2px solid white; }
 
 .small_pic_4_color_pink {
