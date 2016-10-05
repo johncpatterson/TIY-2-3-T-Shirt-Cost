@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <script src="https://use.fontawesome.com/0e26b451b3.js"></script>
-    
+    <script src="https://use.fontawesome.com/0e26b451b3.js"></script>    
 
 </head>
 
@@ -46,11 +45,11 @@
                     <div class="arrow_down"></div>
                 </div><div class="small_pic_4_color_blue">
                 </div>
-                </div></div><div class="small_pic_5"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                </div></div><div class="small_pic_5" id="cart_one"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
                 </div>
             </div>
             <div class="bottom">
-                <span class="text_left">Save my trees</span> <span class="text_right">$29</span>
+                <span class="text_left">Save my trees</span> <span class="text_right" id="price_1">$29</span>
             </div>
         </div>
         <div class="middle_shirt">
@@ -83,11 +82,11 @@
                     <div class="arrow_down"></div>
                 </div><div class="small_pic_4_color_pink">
                 </div>
-                </div></div><div class="small_pic_5"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                </div></div><div class="small_pic_5" id="cart_two"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
                 </div>
             </div>
             <div class="bottom">
-                <span class="text_left">Nature Lover</span> <span class="text_right">$19</span>
+                <span class="text_left">Nature Lover</span> <span class="text_right" id="price_2">$19</span>
             </div>
         </div>
         <div class="right_shirt">
@@ -120,14 +119,21 @@
                     <div class="arrow_down"></div>
                 </div><div class="small_pic_4_color_orange">
                 </div>
-                </div></div><div class="small_pic_5"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                </div></div><div class="small_pic_5" id="cart_three"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
                 </div>
             </div>
             <div class="bottom">
-                <span class="text_left">Forrest Walk</span> <span class="text_right">$39</span>
+                <span class="text_left">Forrest Walk</span> <span class="text_right" id="price_3">$39</span>
             </div>
         </div>
+        <div class="cart">
+            <h1>Your Shopping Cart</h1><br>
+            <h1>Subtotal: <span id="subtotal_box"></span></h1>
+            <h1>Total Price: <span id="totalprice_box"></span></h1>
+        </div>
     </div>
+        <script src="js/main.js"></script>
+
 </body>
 <footer>
 </footer>

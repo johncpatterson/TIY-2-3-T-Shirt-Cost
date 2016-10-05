@@ -1,4 +1,4 @@
-# TIY-1-4-T-Shirt-Cost
+# TIY-2-3-T-Shirt-Cost
 
 The Iron Yard Cincinnati week 2, day 3 assignment. 
 
