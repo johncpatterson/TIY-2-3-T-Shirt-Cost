@@ -20,6 +20,19 @@ function updateCart(price) {
 
 }
 
+// function bounceCart(bounce) {
+// 	if (blueInCart === true || pinkInCart === true || orangeInCart === true) {
+// 		var a = document.getElementByID('cart')
+//           for (i = 0; i < a.length; i++) {
+//             [i].classList.remove('clicked');
+//         }
+//         document.getElementById('cart').classList.add("clicked");
+// 	}
+// 	else if (blueInCart === false || pinkInCart === false || orangeInCart === false) {
+
+// 	}
+// }
+
 cartOne.addEventListener("click", function() {
     if (blueInCart === false) {
         updateCart(29);
