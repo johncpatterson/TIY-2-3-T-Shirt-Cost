@@ -20,7 +20,6 @@ $border-color: #5CA4D7;
 body {
     background-color: $primary-color;
     color: $font-color;
-    height: 100%;
     width: 100%;
 }
 
@@ -43,7 +42,7 @@ span {
     display: inline-block;
     width: 326px / 990px * 100%;
     height: 520px;
-    margin: 30px auto;
+    margin: 20px auto;
     padding: 10px 25px 10px 25px;
 }
 
@@ -143,14 +142,21 @@ span {
 }
 
 .cart {
-    background-color: lightgray;
-    height: 200px;
-    width: 200px;
+    font-size: 20px;
+    width: 100%;
+    text-align: right;
+    padding-right: 5%;
+    font-family: 'Raleway', sans-serif;
 }
 
 .fa-repeat {
     padding-top: 8px;
     padding-left: 8px;
+}
+
+i.fa-shopping-basket {
+    font-size: 28px;
+    
 }
 
 .small_pic_1,

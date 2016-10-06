@@ -53,7 +53,6 @@ table {
 body {
   background-color: white;
   color: #5CA4D7;
-  height: 100%;
   width: 100%; }
 
 span {
@@ -71,7 +70,7 @@ span {
   display: inline-block;
   width: 32.92929%;
   height: 520px;
-  margin: 30px auto;
+  margin: 20px auto;
   padding: 10px 25px 10px 25px; }
 
 .flip_container {
@@ -158,13 +157,18 @@ span {
   font-family: 'Raleway', sans-serif; }
 
 .cart {
-  background-color: lightgray;
-  height: 200px;
-  width: 200px; }
+  font-size: 20px;
+  width: 100%;
+  text-align: right;
+  padding-right: 5%;
+  font-family: 'Raleway', sans-serif; }
 
 .fa-repeat {
   padding-top: 8px;
   padding-left: 8px; }
+
+i.fa-shopping-basket {
+  font-size: 28px; }
 
 .small_pic_1,
 .small_pic_2,
