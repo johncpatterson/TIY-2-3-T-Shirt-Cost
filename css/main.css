@@ -62,7 +62,7 @@ span {
   width: 100%;
   position: relative;
   margin: 10px auto;
-  margin-top: 80px;
+  margin-top: 85px;
   overflow: hidden; }
 
 .left_shirt,
@@ -72,7 +72,7 @@ span {
   width: 32.92929%;
   height: 520px;
   margin: 20px auto;
-  margin-top: 25px;
+  margin-top: 30px;
   padding: 10px 25px 10px 25px; }
 
 .flip_container {
@@ -159,7 +159,7 @@ span {
   font-family: 'Raleway', sans-serif; }
 
 .cart {
-  margin-top: -80px;
+  margin-top: -93px;
   font-size: 20px;
   width: 100%;
   text-align: right;
@@ -169,6 +169,10 @@ span {
   font-family: 'Raleway', sans-serif;
   position: fixed;
   z-index: 10; }
+
+.clicked {
+  animation-name: movePopUpDown;
+  animation-duration: .3s; }
 
 .fa-repeat {
   padding-top: 8px;
@@ -381,5 +385,5 @@ i.fa-shopping-basket {
     width: 125px; }
   .cart {
     background-color: #ddd2d2;
-    padding-right: 8%;
+    padding-right: 7%;
     color: #2d7fb9; } }

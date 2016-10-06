@@ -15,7 +15,22 @@ function updateCart(price) {
     document.getElementById("subtotal_box").innerHTML = subtotal.toFixed(0);
     // document.getElementById("tax_box").innerHTML = tax.toFixed(2);
     document.getElementById("totalprice_box").innerHTML = total.toFixed(2);
+    return total;
+
 }
+
+// function bounceCart(bounce) {
+// 	if (blueInCart === true || pinkInCart === true || orangeInCart === true) {
+// 		var a = document.getElementByID('cart')
+//           for (i = 0; i < a.length; i++) {
+//             [i].classList.remove('clicked');
+//         }
+//         document.getElementById('cart').classList.add("clicked");
+// 	}
+// 	else if (blueInCart === false || pinkInCart === false || orangeInCart === false) {
+
+// 	}
+// }
 
 cartOne.addEventListener("click", function() {
     if (blueInCart === false) {
