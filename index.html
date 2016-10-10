@@ -15,11 +15,12 @@
 
 <body>
     <div class="cart">
-            <h1><i class="fa fa-shopping-basket" aria-hidden="true"></i></h1><br>
+        <h1><i class="fa fa-shopping-basket" aria-hidden="true" id="cart_logo"></i></h1><br>
+        <div class="hidden" id="cart_stuff_to_hide"><h1><span id="product_box"></span></h1><br>
             <h1>Subtotal: $<span id="subtotal_box">0.00</span></h1>
             <h1>Tax (6.5%): $<span id="tax_box">0.00</span></h1>
-            <h1>Total Price: $<span id="totalprice_box">0.00</span></h1>
-        </div>
+            <h1>Total Price: $<span id="totalprice_box">0.00</span></h1></div>
+    </div>
     <div class="container">
             <!-- Blue shirt -->
         <div class="left_shirt">
@@ -137,6 +138,7 @@
         </div>
         
     </div>
+        <script src="node_modules/moment/moment.js"></script>
         <script src="js/main2.js"></script>
 
 </body>

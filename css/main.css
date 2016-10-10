@@ -61,8 +61,7 @@ span {
 .container {
   width: 100%;
   position: relative;
-  margin: 10px auto;
-  margin-top: 85px;
+  margin: 5px auto;
   overflow: hidden; }
 
 .left_shirt,
@@ -72,8 +71,8 @@ span {
   width: 32.92929%;
   height: 520px;
   margin: 20px auto;
-  margin-top: 30px;
-  padding: 10px 25px 10px 25px; }
+  margin-top: 10px;
+  padding: 5px 25px 10px 25px; }
 
 .flip_container {
   perspective: 1000px; }
@@ -101,7 +100,8 @@ span {
 
 .back {
   transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg); }
+  -moz-transform: rotateY(180deg);
+  backface-visibility: visible; }
 
 .flip_container:hover .shirt {
   transform: rotateY(180deg);
@@ -159,16 +159,31 @@ span {
   font-family: 'Raleway', sans-serif; }
 
 .cart {
-  margin-top: -93px;
+  width: 420px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
   font-size: 20px;
-  width: 100%;
   text-align: right;
-  padding-right: 5%;
-  padding-top: 1%;
-  padding-bottom: 1%;
   font-family: 'Raleway', sans-serif;
-  position: fixed;
-  z-index: 10; }
+  z-index: 10;
+  float: right; }
+
+#cart_stuff_to_hide {
+  width: 100%;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  background-color: #5CA4D7;
+  color: white;
+  border-radius: 5px;
+  animation-name: showCartContents;
+  animation-duration: 1s; }
+
+span .time {
+  font-size: 13px; }
+
+.hidden {
+  display: none; }
 
 .clicked {
   animation-name: movePopUpDown;
@@ -179,7 +194,7 @@ span {
   padding-left: 8px; }
 
 i.fa-shopping-basket {
-  font-size: 28px; }
+  font-size: 35px; }
 
 .small_pic_1,
 .small_pic_2,
@@ -199,6 +214,12 @@ i.fa-shopping-basket {
   padding: 20px 0px 0px 0px;
   vertical-align: middle;
   font-size: 23px; }
+
+.small_pic_5.active {
+  background-color: #5CA4D7; }
+
+.small_pic_5.active i {
+  color: white; }
 
 .small_pic_1:hover,
 .small_pic_2:hover,
@@ -352,6 +373,18 @@ i.fa-shopping-basket {
     margin-top: 0;
     opacity: 1; } }
 
+@keyframes showCartContents {
+  0% {
+    margin-right: -420px;
+    opacity: 0; }
+  30% {
+    opacity: .35; }
+  70% {
+    opacity: .65; }
+  100% {
+    margin-right: 0;
+    opacity: 1; } }
+
 /*media queries*/
 @media screen and (max-width: 990px) {
   .left_shirt,
@@ -384,6 +417,6 @@ i.fa-shopping-basket {
     padding: 8px;
     width: 125px; }
   .cart {
-    background-color: #ddd2d2;
-    padding-right: 7%;
-    color: #2d7fb9; } }
+    width: 100%; }
+  #cart_stuff_to_hide {
+    width: 97%; } }
